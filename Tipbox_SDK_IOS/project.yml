@@ -1,0 +1,36 @@
+# XcodeGen 스펙 — `xcodegen generate` 로 TipboxSample.xcodeproj 생성
+# (설치: brew install xcodegen)
+name: TipboxSample
+options:
+  bundleIdPrefix: com.adbc
+  deploymentTarget:
+    iOS: "15.0"
+  createIntermediateGroups: true
+
+# TipBox SDK (Swift Package)
+packages:
+  TipBoxSDK:
+    url: https://github.com/adbcsdk/tipbox-sdk-spm
+    from: "1.0.3"
+
+targets:
+  TipboxSample:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sample
+    dependencies:
+      - package: TipBoxSDK
+        product: TipBoxSDK
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.adbc.tipboxsample
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: "1"
+        SWIFT_VERSION: "5.9"
+        TARGETED_DEVICE_FAMILY: "1,2"
+        GENERATE_INFOPLIST_FILE: NO
+        # 권한 문구와 SKAdNetworkItems 가 들어 있는 Info.plist 를 그대로 사용한다.
+        INFOPLIST_FILE: Sample/Info.plist
+        # 광고 SDK(Pangle) 크래시 방지에 필요
+        OTHER_LDFLAGS: ["$(inherited)", "-ObjC"]

@@ -1,0 +1,284 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1000011000000000000001A /* TipboxSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000001000000000000001A /* TipboxSampleApp.swift */; };
+		A1000012000000000000001A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000001A /* ContentView.swift */; };
+		A1000031000000000000001A /* TipBoxSDK in Frameworks */ = {isa = PBXBuildFile; productRef = A1000030000000000000001A /* TipBoxSDK */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A1000000000000000000001A /* TipboxSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipboxSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1000001000000000000001A /* TipboxSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipboxSampleApp.swift; sourceTree = "<group>"; };
+		A1000002000000000000001A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A1000004000000000000001A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1000020000000000000001A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000031000000000000001A /* TipBoxSDK in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1000040000000000000001A = {
+			isa = PBXGroup;
+			children = (
+				A1000042000000000000001A /* Sample */,
+				A1000041000000000000001A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1000041000000000000001A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1000000000000000000001A /* TipboxSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1000042000000000000001A /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				A1000001000000000000001A /* TipboxSampleApp.swift */,
+				A1000002000000000000001A /* ContentView.swift */,
+				A1000004000000000000001A /* Info.plist */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1000050000000000000001A /* TipboxSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1000062000000000000001A /* Build configuration list for PBXNativeTarget "TipboxSample" */;
+			buildPhases = (
+				A1000019000000000000001A /* Sources */,
+				A1000020000000000000001A /* Frameworks */,
+				A1000021000000000000001A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TipboxSample;
+			packageProductDependencies = (
+				A1000030000000000000001A /* TipBoxSDK */,
+			);
+			productName = TipboxSample;
+			productReference = A1000000000000000000001A /* TipboxSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1000060000000000000001A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A1000050000000000000001A = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A1000061000000000000001A /* Build configuration list for PBXProject "TipboxSample" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1000040000000000000001A;
+			packageReferences = (
+				A1000070000000000000001A /* XCRemoteSwiftPackageReference "tipbox-sdk-spm" */,
+			);
+			productRefGroup = A1000041000000000000001A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1000050000000000000001A /* TipboxSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1000021000000000000001A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1000019000000000000001A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000012000000000000001A /* ContentView.swift in Sources */,
+				A1000011000000000000001A /* TipboxSampleApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A1000063000000000000001A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1000064000000000000001A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1000065000000000000001A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4GLMU346TA;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Sample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adbc.tipboxsample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1000066000000000000001A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4GLMU346TA;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Sample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adbc.tipboxsample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1000061000000000000001A /* Build configuration list for PBXProject "TipboxSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1000063000000000000001A /* Debug */,
+				A1000064000000000000001A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1000062000000000000001A /* Build configuration list for PBXNativeTarget "TipboxSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1000065000000000000001A /* Debug */,
+				A1000066000000000000001A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A1000070000000000000001A /* XCRemoteSwiftPackageReference "tipbox-sdk-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adbcsdk/tipbox-sdk-spm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A1000030000000000000001A /* TipBoxSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1000070000000000000001A /* XCRemoteSwiftPackageReference "tipbox-sdk-spm" */;
+			productName = TipBoxSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A1000060000000000000001A /* Project object */;
+}

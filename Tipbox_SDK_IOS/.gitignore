@@ -1,0 +1,9 @@
+.DS_Store
+# Xcode 사용자별 산출물
+xcuserdata/
+DerivedData/
+build/
+# SPM 로컬 산출물
+.swiftpm/
+# Package.resolved 는 커밋해도 되지만, 샘플에서는 버전 고정을 피하려 제외
+Package.resolved
